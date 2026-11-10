@@ -1,0 +1,25 @@
+"","Alcippe brunneicauda","Anorrhinus galeritus","Anthracoceros albirostris","Anthracoceros malayanus","Buceros rhinoceros","Calorhamphus fuliginosus","Calyptomena viridis","Chalcophaps indica","Chloropsis cochinchinensis","Chloropsis cyanopogon","Chloropsis sonnerati","Coracina striata","Corvus enca","Criniger bres","Criniger finschii","Criniger phaeocephalus","Dicaeum agile","Dicaeum chrysorrherum","Dicaeum concolor","Dicaeum ignipectus","Dicaeum trigonostigma","Ducula badia","Gracula religiosa","Harpactes diardi","Hypsipetes charlottae","Hypsipetes criniger","Hypsipetes flavala","Hypsipetes malaccensis","Irene puella","Lophura ignita","Loriculus galgulus","Megalaima australis","Megalaima chrysopogon","Megalaima henricii","Megalaima mystacophanos","Melanochlora sultanea","Oriolus xanthonotus","Platysmurus leucopterus","Prionochilus maculatus","Prionochilus percussus","Ptilinopus jambu","Pycnonotus atriceps","Pycnonotus brunneus","Pycnonotus cyaniventris","Pycnonotus erythropthalmos","Pycnonotus eutilotus","Pycnonotus finlaysoni","Pycnonotus goavier","Pycnonotus melanoleucos","Pycnonotus plumosus","Pycnonotus simplex","Pycnonotus squamatus","Pycnonotus zeylanicus","Rhinoplax vigil","Rhyticeros corrugatus","Treron capellei","Treron curvirostra","Treron fulvicollis","Treron olax","Turdus obscurus","Zoothera interpres"
+"Ficus benjamina",1,0,0,0,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+"Ficus binnendykii",1,0,0,0,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0
+"Ficus bracteata",0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0
+"Ficus caulocarpa",1,0,0,0,0,1,1,0,1,1,1,0,0,1,1,1,0,1,1,0,0,0,1,0,1,1,0,0,1,0,1,1,1,1,1,0,1,0,1,1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0
+"Ficus consociata",0,0,0,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Ficus crassiramea",1,1,0,1,1,1,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1
+"Ficus cucurbitina",0,1,0,1,1,1,1,0,1,1,1,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0
+"Ficus delosyce",0,1,0,1,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0
+"Ficus drupacea",0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0
+"Ficus dubia",0,1,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0
+"Ficus heteropleura",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0
+"Ficus kerkhovenii",0,0,0,1,1,1,1,0,0,1,1,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,1,1,0,1,1,1,1,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0
+"Ficus obscura",1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,1,0,1,1,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0
+"Ficus parietalis",0,1,0,1,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Ficus pellucido-punctata",1,1,0,1,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+"Ficus pisocarpa",0,1,1,1,1,1,1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,1,0,1,0,0,0,1,0,1,1,1,1,1,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0
+"Ficus sagittata",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Ficus stricta",0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"Ficus stupenda",0,1,0,1,1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1
+"Ficus subcordata",0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0
+"Ficus sumatrana",0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"Ficus sundaica ",0,1,0,1,1,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+"Ficus trichocarpa",0,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,1,0,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0
+"Ficus virens",0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,1,0,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
