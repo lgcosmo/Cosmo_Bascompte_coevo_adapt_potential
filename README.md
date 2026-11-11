@@ -118,6 +118,7 @@ Cosmo_Bascompte_coevo_adapt_potential/
 |-- src/
 |   |-- aux_functions.R                # Network reading, T-matrix and analytical GMF components
 |   |-- main_functions.R               # Exact log fitness, coevolutionary model, numerical simulations
+|   |-- network_references.csv         # Source reference and locality of the 220 analysed networks
 |   `-- empirical_networks/            # 230 empirical incidence matrices (Web of Life)
 |-- scripts/
 |   |-- packages_dependencies.R        # Installs the R packages used by the project
