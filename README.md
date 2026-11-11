@@ -18,23 +18,23 @@ Consequently, environmental fluctuations and coevolution may lower the ceiling o
 
 ## Modeling coevolution and fitness in mutualistic networks
 
-Each species has a single continuous trait that mediates its mutualistic interactions, such as the depth of a floral tube or the length of a proboscis. The mean trait value of the population of species $i$, $\overline{z}_i$, affects adaptations through two sources in the environment. Mutualistic interactions contribute with a proportion $m_i$ and favor trait matching between species $i$ and each of its mutualistic partners $j$. The abiotic environment contributes with the remaining proportion, $(1-m_i)$, and favors an environmental optimum, $\theta_i^{(t)}$. Measuring fitness relative to its theoretical maximum, the mean population fitness of species $i$ at generation $t$ is (equation 1 of the main text):
+Each species has a single continuous trait that mediates its mutualistic interactions, such as the depth of a floral tube or the length of a proboscis. The mean trait value of the population of species $`i`$, $`\overline{z}_i`$, affects adaptations through two sources in the environment. Mutualistic interactions contribute with a proportion $`m_i`$ and favor trait matching between species $`i`$ and each of its mutualistic partners $`j`$. The abiotic environment contributes with the remaining proportion, $`(1-m_i)`$, and favors an environmental optimum, $`\theta_i^{(t)}`$. Measuring fitness relative to its theoretical maximum, the mean population fitness of species $`i`$ at generation $`t`$ is (equation 1 of the main text):
 
 $$
 \overline{w}_i^{(t)} = \exp\left[\frac{m_i}{\alpha}\ln\left(\sum_j \frac{a_{ij}}{k_i}\, e^{-\alpha\left(\overline{z}_j^{(t)}-\overline{z}_i^{(t)}\right)^2}\right) - (1-m_i)\left(\theta_i^{(t)}-\overline{z}_i^{(t)}\right)^2\right],
 $$
 
-where $a_{ij}=1$ when species $i$ and $j$ interact and zero otherwise; $k_i$ is the number of mutualistic partners of species $i$; and $\alpha$ controls how strongly the benefits of mutualisms decay with mismatches in traits. Fitness decreases when the trait of species $i$ mismatches, on average, the traits of its mutualistic partners, and when it differs from its environmental optimum. We derive this function by integrating the selection gradient that drives coevolution in mutualisms across different studies (Supplementary Information, section S1).
+where $`a_{ij}=1`$ when species $`i`$ and $`j`$ interact and zero otherwise; $`k_i`$ is the number of mutualistic partners of species $`i`$; and $`\alpha`$ controls how strongly the benefits of mutualisms decay with mismatches in traits. Fitness decreases when the trait of species $`i`$ mismatches, on average, the traits of its mutualistic partners, and when it differs from its environmental optimum. We derive this function by integrating the selection gradient that drives coevolution in mutualisms across different studies (Supplementary Information, section S1).
 
 ## Mapping geometric mean fitness onto the fitness landscape
 
-When the environment fluctuates, fitness changes from one generation to the next and accumulates multiplicatively. As such, the long-term growth of a population is governed by its geometric mean fitness, whose log equals the temporal average of log fitness, $\ln G(\overline{w}_i)=\mathbb{E}_t[\ln\overline{w}_i^{(t)}]$. Assuming that the benefits of mutualisms decay slowly with trait differences (small values of $\alpha$), the log of GMF can be written as a function of three components (equation 2 of the main text):
+When the environment fluctuates, fitness changes from one generation to the next and accumulates multiplicatively. As such, the long-term growth of a population is governed by its geometric mean fitness, whose log equals the temporal average of log fitness, $`\ln G(\overline{w}_i)=\mathbb{E}_t[\ln\overline{w}_i^{(t)}]`$. Assuming that the benefits of mutualisms decay slowly with trait differences (small values of $`\alpha`$), the log of GMF can be written as a function of three components (equation 2 of the main text):
 
 $$
 \ln G(\overline{w}_i) \approx -\,\mathbb{E}_t\!\left[\left(\overline{z}_i^{(t)}-\overline{z}_{i,\mathrm{opt}}^{(t)}\right)^2\right] - \mathbb{E}_t\!\left[V_i^{(t)}\right] + \frac{m_i\alpha}{2}\,\mathbb{E}_t\!\left[V_{D,i}^{(t)}\right].
 $$
 
-The first term is the distance to the peak. It contains the squared distance between the mean trait of the population and its adaptive peak, $\overline{z}_{i,\mathrm{opt}}^{(t)} = m_i \sum_j (a_{ij}/k_i)\,\overline{z}_j^{(t)} + (1-m_i)\,\theta_i^{(t)}$, and depicts how maladapted the population is. The two remaining terms compose the height of the peak. The variance of selective targets, $V_i^{(t)}$, quantifies the trade-off in adaptation between mutualistic partners and the abiotic environment, and always decreases the height of the peak. In turn, the variance in trait matching between species $i$ and each of its partners, $V_{D,i}^{(t)}$, increases the height of the peak, because the well-matched partners compensate for the poorly matched ones.
+The first term is the distance to the peak. It contains the squared distance between the mean trait of the population and its adaptive peak, $`\overline{z}_{i,\mathrm{opt}}^{(t)} = m_i \sum_j (a_{ij}/k_i)\,\overline{z}_j^{(t)} + (1-m_i)\,\theta_i^{(t)}`$, and depicts how maladapted the population is. The two remaining terms compose the height of the peak. The variance of selective targets, $`V_i^{(t)}`$, quantifies the trade-off in adaptation between mutualistic partners and the abiotic environment, and always decreases the height of the peak. In turn, the variance in trait matching between species $`i`$ and each of its partners, $`V_{D,i}^{(t)}`$, increases the height of the peak, because the well-matched partners compensate for the poorly matched ones.
 
 This equation averages the fitness landscapes that a species experiences across generations and defines the geometric mean fitness landscape. It then follows that a fluctuating environment can hinder the long-term fitness of species in two distinct ways. On the one hand, a population may lag behind its moving peak and accumulate maladaptation. On the other hand, even a population that is at its adaptive peak in every generation can still achieve a smaller GMF if these adaptive peaks are, on average, low.
 
@@ -44,10 +44,10 @@ We evaluate the three components of GMF in two scenarios that differ in how the 
 
 | Scenario | Traits | Environmental optima | Script | Output table |
 |---|---|---|---|---|
-| Independent fluctuations | Partner traits drawn independently at every generation, $\mathcal{N}(0,\,1.5^2)$. The trait of the focal species remains fixed at $\overline{z}_i=1$ | Drawn independently at every generation, $\mathcal{N}(0,\,1)$ | `scripts/run_random_scenario.R` | `results/random_gmf_by_degree.csv` |
-| Coevolution | The traits of all species reach their coevolutionary steady state at each time step | Drawn independently for every species at each time step, $\mathcal{N}(0,\,2.88^2)$ | `scripts/run_coevolution.R` | `results/coevolution_gmf.csv` |
+| Independent fluctuations | Partner traits drawn independently at every generation, $`\mathcal{N}(0,\,1.5^2)`$. The trait of the focal species remains fixed at $`\overline{z}_i=1`$ | Drawn independently at every generation, $`\mathcal{N}(0,\,1)`$ | `scripts/run_random_scenario.R` | `results/random_gmf_by_degree.csv` |
+| Coevolution | The traits of all species reach their coevolutionary steady state at each time step | Drawn independently for every species at each time step, $`\mathcal{N}(0,\,2.88^2)`$ | `scripts/run_coevolution.R` | `results/coevolution_gmf.csv` |
 
-Both scenarios use $\alpha = 0.2$ and $m_i = 0.5$, and the values above are the ones set in the scripts. The scenario with independent fluctuations depends on the network only through the number of partners of the focal species, so we store it once per number of partners. The coevolutionary scenario depends on the whole network, so we store it once per species.
+Both scenarios use $`\alpha = 0.2`$ and $`m_i = 0.5`$, and the values above are the ones set in the scripts. The scenario with independent fluctuations depends on the network only through the number of partners of the focal species, so we store it once per number of partners. The coevolutionary scenario depends on the whole network, so we store it once per species.
 
 ### Independent fluctuations favor generalists through a portfolio effect
 
@@ -57,7 +57,7 @@ $$
 \ln G(\overline{w}_i) \approx -\left(\overline{z}_i - \mathbb{E}_t\!\left[\overline{z}_{i,\mathrm{opt}}\right]\right)^2 - \mathcal{V}_i + m_i\,\alpha\,\sigma_{Dz}^{2}\left(1-\frac{1}{k_i}\right).
 $$
 
-The first term depicts the mismatch between the trait of species $i$ and the average position of its moving peak. The term $\mathcal{V}_i$ is the long-run counterpart of the variance of selective targets. The final term is the portfolio effect, scaled by the temporal variance in the trait matching between species $i$ and its partners, $\sigma_{Dz}^{2}$. The factor $(1-1/k_i)$ equals zero for specialists with a single partner and increases toward one with the number of partners. When partner traits fluctuate independently, well-matched partners compensate for poorly matched ones in any given generation. The portfolio effect does not affect the distance between a population and its peak. Instead, it raises the adaptive peak, and generalists achieve a higher GMF than specialists because their maximum adaptive potential increases.
+The first term depicts the mismatch between the trait of species $`i`$ and the average position of its moving peak. The term $`\mathcal{V}_i`$ is the long-run counterpart of the variance of selective targets. The final term is the portfolio effect, scaled by the temporal variance in the trait matching between species $`i`$ and its partners, $`\sigma_{Dz}^{2}`$. The factor $`(1-1/k_i)`$ equals zero for specialists with a single partner and increases toward one with the number of partners. When partner traits fluctuate independently, well-matched partners compensate for poorly matched ones in any given generation. The portfolio effect does not affect the distance between a population and its peak. Instead, it raises the adaptive peak, and generalists achieve a higher GMF than specialists because their maximum adaptive potential increases.
 
 ### Coevolution reshapes the adaptive potential of species
 
@@ -67,29 +67,29 @@ $$
 \mathbf{z}^{*} = (\mathbf{I}-\mathbf{Q})^{-1}\,\boldsymbol{\Psi}\,\boldsymbol{\theta} = \mathbf{T}\boldsymbol{\theta},
 $$
 
-where $\mathbf{Q}$ contains the direct evolutionary effects that mutualistic partners exert on each other, and $\boldsymbol{\Psi}$ is a diagonal matrix that weights the selective pressures of the abiotic environment. The matrix $\mathbf{T}$ accumulates the evolutionary effects that flow through all the direct and indirect coevolutionary pathways of the network. Each entry $T_{ij}$ measures how strongly the environmental optimum of species $j$ shapes the steady-state trait of species $i$. We assume that species traits reach this steady state before the environmental optima change. Coevolving species are then always near their adaptive peaks, and their GMF depends only on the temporal average of the height of these peaks (equation 5 of the main text):
+where $`\mathbf{Q}`$ contains the direct evolutionary effects that mutualistic partners exert on each other, and $`\boldsymbol{\Psi}`$ is a diagonal matrix that weights the selective pressures of the abiotic environment. The matrix $`\mathbf{T}`$ accumulates the evolutionary effects that flow through all the direct and indirect coevolutionary pathways of the network. Each entry $`T_{ij}`$ measures how strongly the environmental optimum of species $`j`$ shapes the steady-state trait of species $`i`$. We assume that species traits reach this steady state before the environmental optima change. Coevolving species are then always near their adaptive peaks, and their GMF depends only on the temporal average of the height of these peaks (equation 5 of the main text):
 
 $$
 \ln G(\overline{w}_i) \approx -\,\sigma_\theta^{2}\left(S_i - m_i\,\bar{S}_j\right) + m_i\,\alpha\left(1-\frac{1}{k_i}\right)\bar{\nu}_i^{2}\left(1-r_i^{2}\right).
 $$
 
-The first term is the conflict of evolutionary effects, the coevolutionary counterpart of the variance of selective targets. Here, $S_i = 1-\sum_k T_{ik}^2$ is the Simpson diversity of the coevolutionary pathways that reach species $i$, and $\bar{S}_j$ is the average diversity of the pathways that reach its partners. When the pathways reaching species $i$ are more diverse than the ones reaching its partners, mutualistic and environmental selection favor different trait values, and the adaptive peaks of species $i$ become, on average, lower.
+The first term is the conflict of evolutionary effects, the coevolutionary counterpart of the variance of selective targets. Here, $`S_i = 1-\sum_k T_{ik}^2`$ is the Simpson diversity of the coevolutionary pathways that reach species $`i`$, and $`\bar{S}_j`$ is the average diversity of the pathways that reach its partners. When the pathways reaching species $`i`$ are more diverse than the ones reaching its partners, mutualistic and environmental selection favor different trait values, and the adaptive peaks of species $`i`$ become, on average, lower.
 
-The second term is the portfolio effect of generalists under coevolution. The term $\bar{\nu}_i$ is the average temporal variance of the trait differences between species $i$ and its partners. In turn, $r_i^{2}$ is the temporal correlation between the squared trait differences of species $i$ with its partners, averaged across all pairs of partners. Thus, $r_i^{2}$ measures the extent to which the trait matching of species $i$ with its different partners fluctuates in synchrony across generations. When partners receive evolutionary effects from the same species through shared coevolutionary pathways, $r_i^{2}$ approaches one and the portfolio effect collapses, even for species with many partners. The Supplementary Information contains the complete derivation of these equations (sections S1 to S6).
+The second term is the portfolio effect of generalists under coevolution. The term $`\bar{\nu}_i`$ is the average temporal variance of the trait differences between species $`i`$ and its partners. In turn, $`r_i^{2}`$ is the temporal correlation between the squared trait differences of species $`i`$ with its partners, averaged across all pairs of partners. Thus, $`r_i^{2}`$ measures the extent to which the trait matching of species $`i`$ with its different partners fluctuates in synchrony across generations. When partners receive evolutionary effects from the same species through shared coevolutionary pathways, $`r_i^{2}`$ approaches one and the portfolio effect collapses, even for species with many partners. The Supplementary Information contains the complete derivation of these equations (sections S1 to S6).
 
 ## Indirect effects and the number of pathways connecting species
 
-Both components of peak height under coevolution are built from the rows of the $\mathbf{T}$-matrix. Thus, they depend on how evolutionary effects propagate through the pathways of the network. We quantify the contribution of indirect effects of each network as the proportion of the total evolutionary effects in $\mathbf{T}$ that connects species that do not directly interact:
+Both components of peak height under coevolution are built from the rows of the $`\mathbf{T}`$-matrix. Thus, they depend on how evolutionary effects propagate through the pathways of the network. We quantify the contribution of indirect effects of each network as the proportion of the total evolutionary effects in $`\mathbf{T}`$ that connects species that do not directly interact:
 
 $$
 F = \frac{\sum_i \sum_{j \neq i} (1-a_{ij})\,T_{ij}}{\sum_i \sum_{j \neq i} T_{ij}}.
 $$
 
-In turn, we measure the number of pathways connecting species in each network as $1-1/\lambda$, where $\lambda$ is the leading eigenvalue of the adjacency matrix. The number of pathways of length $\ell$ connecting any two species grows as $\lambda^{\ell}$. Consequently, the more pathways a network has, the easier it is for species that do not directly interact to affect each other. A high number of pathways is typical of the species-rich and nested networks that characterize pollination and seed-dispersal mutualisms. In these networks, indirect effects increase the conflict of evolutionary effects and the correlation among partners, and species with the same number of partners achieve a lower GMF.
+In turn, we measure the number of pathways connecting species in each network as $`1-1/\lambda`$, where $`\lambda`$ is the leading eigenvalue of the adjacency matrix. The number of pathways of length $`\ell`$ connecting any two species grows as $`\lambda^{\ell}`$. Consequently, the more pathways a network has, the easier it is for species that do not directly interact to affect each other. A high number of pathways is typical of the species-rich and nested networks that characterize pollination and seed-dispersal mutualisms. In these networks, indirect effects increase the conflict of evolutionary effects and the correlation among partners, and species with the same number of partners achieve a lower GMF.
 
 ## Empirical networks
 
-We parameterize the model with the structure of empirical mutualistic networks from the Web of Life database (www.web-of-life.es). The repository contains 230 plant-by-animal incidence matrices in `src/empirical_networks/`. We set $a_{ij}=1$ whenever two species interact, drop species without interactions, and exclude the ten networks with 300 or more species. The 220 remaining networks compose the dataset of the analyses:
+We parameterize the model with the structure of empirical mutualistic networks from the Web of Life database (www.web-of-life.es). The repository contains 230 plant-by-animal incidence matrices in `src/empirical_networks/`. We set $`a_{ij}=1`$ whenever two species interact, drop species without interactions, and exclude the ten networks with 300 or more species. The 220 remaining networks compose the dataset of the analyses:
 
 | Mutualism | Networks |
 |---|---:|
@@ -141,13 +141,13 @@ The table `results/coevolution_gmf.csv` stores the quantities of equation 5 of t
 |---|---|
 | `gmf_exact`, `ln_gmf_exact` | GMF from numerical simulations of the exact coevolutionary model |
 | `gmf_approx`, `ln_gmf_approx` | Analytical GMF (equation 5 of the main text) |
-| `var_selective_target` | Conflict of evolutionary effects, $\sigma_\theta^{2}(S_i - m_i\,\bar{S}_j)$ |
+| `var_selective_target` | Conflict of evolutionary effects, $`\sigma_\theta^{2}(S_i - m_i\,\bar{S}_j)`$ |
 | `generalist_benefit` | Portfolio effect of generalists under coevolution |
-| `R_i`, `R_bar` | Diversity of coevolutionary pathways, $S_i$ and $\bar{S}_j$ |
-| `nu_bar` | Average temporal variance of the trait differences, $\bar{\nu}_i$ |
-| `r2_partner` | Correlation among partners, $r_i^{2}$ |
-| `indirect_network` | Contribution of indirect effects, $F$ |
-| `leading_eigenvalue` | Leading eigenvalue of the adjacency matrix, $\lambda$ |
+| `R_i`, `R_bar` | Diversity of coevolutionary pathways, $`S_i`$ and $`\bar{S}_j`$ |
+| `nu_bar` | Average temporal variance of the trait differences, $`\bar{\nu}_i`$ |
+| `r2_partner` | Correlation among partners, $`r_i^{2}`$ |
+| `indirect_network` | Contribution of indirect effects, $`F`$ |
+| `leading_eigenvalue` | Leading eigenvalue of the adjacency matrix, $`\lambda`$ |
 
 ## Running the analyses
 
