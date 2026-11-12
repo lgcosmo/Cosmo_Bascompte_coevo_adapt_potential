@@ -45,7 +45,7 @@ We evaluate the three components of GMF in two scenarios that differ in how the 
 | Scenario | Traits | Environmental optima | Script | Output table |
 |---|---|---|---|---|
 | Independent fluctuations | Partner traits drawn independently at every generation, $`\mathcal{N}(0,\,1.5^2)`$. The trait of the focal species remains fixed at $`\overline{z}_i=1`$ | Drawn independently at every generation, $`\mathcal{N}(0,\,1)`$ | `scripts/run_random_scenario.R` | `results/random_gmf_by_degree.csv` |
-| Coevolution | The traits of all species reach their coevolutionary steady state at each time step | Drawn independently for every species at each time step, $`\mathcal{N}(0,\,2.88^2)`$ | `scripts/run_coevolution.R` | `results/coevolution_gmf.csv` |
+| Coevolution | The traits of all species reach their coevolutionary steady state at each time step | Drawn independently for every species at each time step, $`\mathcal{N}(0,\,2.5^2)`$ | `scripts/run_coevolution.R` | `results/coevolution_gmf.csv` |
 
 Both scenarios use $`\alpha = 0.2`$ and $`m_i = 0.5`$, and the values above are the ones set in the scripts. The scenario with independent fluctuations depends on the network only through the number of partners of the focal species, so we store it once per number of partners. The coevolutionary scenario depends on the whole network, so we store it once per species.
 
